@@ -1,7 +1,7 @@
 import { createTheme } from "@material-ui/core/styles";
 
 const theme = createTheme({
-    pallte: {
+    pallete: {
         primary: {
             main: '#000000',
         }
