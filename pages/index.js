@@ -12,6 +12,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import TemplateDefault from '../src/templates/Default'
 import SearchBar from '../src/components/SearchBar'
 
+
 const useStyles = makeStyles((theme) => ({
   container: {
     padding: theme.spacing(8, 0, 6),
@@ -35,9 +36,11 @@ export default function Home() {
   return (
     <TemplateDefault>
       <Container maxWidth= "sm" className={classes.container}>
+      
         <Typography component="h1" variant="h2" align="center" className={classes.snap}>
           SnapShot
         </Typography>
+        <img src='../images/snap.png'></img>
         <SearchBar/>
         <Button variant="contained" color="primary"align="center" className={classes.buttonAdd}> 
           Montanhas
