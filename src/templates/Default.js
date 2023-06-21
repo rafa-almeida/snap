@@ -1,17 +1,14 @@
-import { Search, Title } from '@material-ui/icons'
-import Header from '../components/Header'
-import SearchBar from '../components/SearchBar'
-import TitImg from '../components/TitImg'
 
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const Default = ({ children }) => {
     
     return (
         <>
-        <Header />     
-          
+        <Header />       
         {children}
-        <footer>FOOTER</footer>
+        <Footer />
         </>
     )
 }

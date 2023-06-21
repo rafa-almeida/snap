@@ -4,24 +4,25 @@ import {
   Grid,
   Card,
   CardMedia,
-  CardContent,
   Typography
 } from '@material-ui/core'
 
 import { makeStyles } from '@material-ui/core/styles'
 import TemplateDefault from '../src/templates/Default'
-import SearchBar from '../src/components/SearchBar'
+
 
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    padding: theme.spacing(8, 0, 6),
+    padding: theme.spacing(8, 0, 5),
 
   },
 
+
   cardMedia: {
+    
     paddingTop: '56%',
-    margin: '0',
+    
   },
 
   buttonAdd: {
@@ -37,16 +38,14 @@ export default function Home() {
     <TemplateDefault>
       <Container maxWidth= "sm" className={classes.container}>
       
-        <Typography component="h1" variant="h2" align="center" className={classes.snap}>
-          SnapShot
+        <Typography component="h4" variant="h5" align="center" className={classes.snap}  >
+          Encontre suas melhores imagens 
         </Typography>
-        <img src='../images/snap.png'></img>
-        <SearchBar/>
         <Button variant="contained" color="primary"align="center" className={classes.buttonAdd}> 
           Montanhas
         </Button>
         <Button variant="contained" color="primary" align="center" className={classes.buttonAdd}> 
-          Praias
+          Praias 
         </Button>
         <Button variant="contained" color="primary" align="center" className={classes.buttonAdd}> 
           Passáros
@@ -54,102 +53,104 @@ export default function Home() {
         <Button variant="contained" color="primary" align="center" className={classes.buttonAdd}> 
           Comida
         </Button>
+      </Container>   
+
+      <Container maxWidth="md">
+        <Grid container spacing={4}>
+          <Grid item xs={12} sm={6} md={4}>
+            <Card >
+              <CardMedia
+              className={classes.cardMedia}
+              image={'https://source.unsplash.com/800x600/?criança' }
+              title="Titulo da imagem"
+            />
+            </Card>
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={4}>
+            <Card>
+              <CardMedia
+              className={classes.cardMedia}
+              image={'https://source.unsplash.com/800x600/?praia'}
+              title="Titulo da imagem"
+            />
+            </Card>
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={4}>
+            <Card>
+              <CardMedia
+              className={classes.cardMedia}
+              image={'https://source.unsplash.com/800x600/?passaros'}
+              title="Titulo da imagem"
+            />
+            </Card>
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={4}>
+            <Card>
+              <CardMedia
+              className={classes.cardMedia}
+              image={'https://source.unsplash.com/800x600/?comida'}
+              title="Titulo da imagem"
+            />
+            </Card>
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={4}>
+            <Card>
+              <CardMedia
+              className={classes.cardMedia}
+              image={'https://source.unsplash.com/800x600/?beleza'}
+              title="Titulo da imagem"
+            />
+            </Card>
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={4}>
+            <Card>
+              <CardMedia
+              className={classes.cardMedia}
+              image={'https://source.unsplash.com/800x600/?mar'}
+              title="Titulo da imagem"
+            />
+            </Card>
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={4}>
+            <Card>
+              <CardMedia
+              className={classes.cardMedia}
+              image={'https://source.unsplash.com/800x600/?sol'}
+              title="Titulo da imagem"
+            />
+            </Card>
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={4}>
+            <Card>
+              <CardMedia
+              className={classes.cardMedia}
+              image={'https://source.unsplash.com/800x600/?frio'}
+              title="Titulo da imagem"
+            />
+            </Card>
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={4}>
+            <Card>
+              <CardMedia
+              className={classes.cardMedia}
+              image={'https://source.unsplash.com/800x600/?montanhas'}
+              title="Titulo da imagem"
+            />
+            </Card>
+          </Grid> 
+        </Grid>      
       </Container>
-
-      <Container maxWidth="md" >
-        <Grid container spacing={4} >
-          <Grid item xs={12} sm={6} md={4}>
-            <Card>
-              <CardMedia
-              className={classes.cardMedia}
-              image={'https://source.unsplash.com/random'}
-              title="Titulo da imagem"
-            />
-            </Card>
-          </Grid>
-
-          <Grid item xs={12} sm={6} md={4}>
-            <Card>
-              <CardMedia
-              className={classes.cardMedia}
-              image={'https://source.unsplash.com/random'}
-              title="Titulo da imagem"
-            />
-            </Card>
-          </Grid>
-
-          <Grid item xs={12} sm={6} md={4}>
-            <Card>
-              <CardMedia
-              className={classes.cardMedia}
-              image={'https://source.unsplash.com/random'}
-              title="Titulo da imagem"
-            />
-            </Card>
-          </Grid>
-
-          <Grid item xs={12} sm={6} md={4}>
-            <Card>
-              <CardMedia
-              className={classes.cardMedia}
-              image={'https://source.unsplash.com/random'}
-              title="Titulo da imagem"
-            />
-            </Card>
-          </Grid>
-
-          <Grid item xs={12} sm={6} md={4}>
-            <Card>
-              <CardMedia
-              className={classes.cardMedia}
-              image={'https://source.unsplash.com/random'}
-              title="Titulo da imagem"
-            />
-            </Card>
-          </Grid>
-
-          <Grid item xs={12} sm={6} md={4}>
-            <Card>
-              <CardMedia
-              className={classes.cardMedia}
-              image={'https://source.unsplash.com/random'}
-              title="Titulo da imagem"
-            />
-            </Card>
-          </Grid>
-
-          <Grid item xs={12} sm={6} md={4}>
-            <Card>
-              <CardMedia
-              className={classes.cardMedia}
-              image={'https://source.unsplash.com/random'}
-              title="Titulo da imagem"
-            />
-            </Card>
-          </Grid>
-
-          <Grid item xs={12} sm={6} md={4}>
-            <Card>
-              <CardMedia
-              className={classes.cardMedia}
-              image={'https://source.unsplash.com/random'}
-              title="Titulo da imagem"
-            />
-            </Card>
-          </Grid>
-
-          <Grid item xs={12} sm={6} md={4}>
-            <Card>
-              <CardMedia
-              className={classes.cardMedia}
-              image={'https://source.unsplash.com/random'}
-              title="Titulo da imagem"
-            />
-            </Card>
-          </Grid>
-        </Grid>
-        
-      </Container>
+      
+     
+      
       
     </TemplateDefault>
   )
