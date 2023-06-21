@@ -1,7 +1,7 @@
 
 ## Começando
 
-<img width="500" alt="page" src="https://github.com/rafa-almeida/snap/assets/91760517/5b6ddefe-a8bf-49c8-a3ea-b668f51b00ab">
+<img width="800" alt="page" src="https://github.com/rafa-almeida/snap/assets/91760517/5b6ddefe-a8bf-49c8-a3ea-b668f51b00ab">
 
 Este projeto tem o objetivo de criar uma página de busca de imagens através de uma API.
 
